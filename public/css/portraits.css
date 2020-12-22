@@ -1,0 +1,113 @@
+.server
+{
+	position: relative;
+	display: block;
+	z-index: 0;
+	height: 50px;
+	width: 50px;
+	margin: 10px auto;
+	border-radius: 50%;
+	border: none;
+	outline: none;
+	font-size: 16px;
+	background-color: #36393f;
+	color: #b0b0b0;
+	transition: border-radius .25s;
+}
+
+.server.pic
+{
+	background-size: contain;
+}
+
+.server:hover, .server.active
+{
+	border-radius: 33%;
+	background-color: var(--discord_blue);
+	color: white;
+}
+
+#home i
+{
+	font-size: 24px;
+}
+
+#addServer
+{
+	color: #43b581;
+}
+#addServer:hover
+{
+	background-color: #43b582;
+	color: white; 
+}
+
+.noPic:hover
+{
+	background-color: var(--discord_blue);
+	color: white; 
+}
+
+.profile
+{
+	position: relative;
+	display: block;
+	z-index: 0;
+	height: var(--profile_size);
+	width: var(--profile_size);
+	margin: 10px;
+	border-radius: 50%;
+	border: none;
+	outline: none;
+	color: white;
+	background-size: contain;
+	background-color: var(--content_color);
+}
+
+.profile.channel
+{
+	background-image: url('../images/channel.png');
+}
+
+.profile.channel:hover, .profile.channel.selected
+{
+	background-image: url('../images/channel_selected.png');
+}
+
+#myProfile .profile:hover
+{
+	filter: brightness(.75)
+	
+}
+.status
+{
+	border-radius: 50%;
+	background-color: transparent;
+}
+
+.profile .status
+{
+	position: absolute;
+	z-index: 1;
+	right: -2px;
+	bottom: -2px;
+	font-size: 10px;
+	border-radius: 50%;
+	border:2px solid var(--inNav);
+	background-color: var(--inNav);
+}
+
+.busy
+{
+	color: #ff5454;
+}
+
+.offline
+{
+	color: var(--text);
+}
+
+.online
+{
+	color: #43b581;
+}
